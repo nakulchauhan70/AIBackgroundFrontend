@@ -33,7 +33,7 @@ body {
 
 .navtab {
 	width:80%;
-	height: 700px;
+	height: 450px;
 	position: relative;
 	margin: 100px auto;
 	overflow: hidden;
@@ -70,7 +70,7 @@ body {
 
 .content {
 	background: linear-gradient(to right, rgb(192, 192, 192), rgb(50, 99, 96));
-	height: 700px;
+	height: 500px;
 	position: absolute;
 	transform: translateX(100%);
 	transition: 0.3s;
@@ -90,7 +90,7 @@ body {
 	margin: auto;
 	padding: 15px;
 
-	width: 70%;
+	width: 50%;
 	height: 50px;
 	background:
 		radial-gradient(circle farthest-side at 0% 50%,#fb1 23.5%,rgba(240,166,17,0) 0)21px 30px,

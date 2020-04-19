@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS Accordion</title>
+
+  <link rel="stylesheet" type="text/css" href="./collapsible.css">
+
+</head>
+
+<body>
+  <div class="collapse-container">
+    <div class="collapse1">
+      <input type="checkbox" id="title1" onclick="collapse('smartContent1', 'smartContent2', 'smartContent3')" />
+      <label for="title1">Face Recognition</label>
+
+      <div class="smartContent1">
+        <p>Your smartContent goes here.</p>
+      </div>
+    </div>
+
+    <div class="collapse2">
+      <input type="checkbox" id="title2" onclick="collapse('smartContent2', 'smartContent1', 'smartContent3')"/>
+      <label for="title2">Speech Recognition</label>
+
+      <div class="smartContent2">
+        <p>Your smartContent goes here.</p>
+      </div>
+    </div>  
+
+    <div class="collapse3">
+      <input type="checkbox" id="title3" onclick="collapse('smartContent3', 'smartContent1', 'smartContent2')"/>
+      <label for="title3">Text Recognition</label>
+
+      <div class="smartContent3">
+        <p>Your smartContent goes here.</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./collapsible.js"></script>
+
+</body>
+
+</html>
+

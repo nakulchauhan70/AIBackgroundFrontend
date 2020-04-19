@@ -3,14 +3,140 @@
 <head>
 	<title>Background image</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" type="text/css" href="./collapsible.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+
 	<div id="particles-js">
 		<img src="./face.png">
+
+
+
+
+		<div class="navtab">
+			<div class="btn-box">
+				<button id="braintab" onclick="openSmartBrain()">
+					<i class="fa fa-rocket" aria-hidden="true"></i>
+					Smart brain
+				</button>
+				<button id="gallerytab" onclick="openGallery()">
+					<i class="fa fa-picture-o" aria-hidden="true"></i>
+					Gallary
+				</button>
+			</div>
+
+			<div id="content1" class="content">	
+				<div class="collapse-container">
+					<div class="collapse1">
+						<input type="checkbox" id="title1" onclick="collapse('collapse1', 'collapse2')" />
+      					<label for="title1">
+      						<p id="header">Face Recognition</p>
+      						<p id="sign">+</p>
+      					</label>
+
+						<div class="smartContent">
+							<h1>Face Recognition</h1>
+							<div class="content-description">
+								<input type="text" name="">
+								<button onclick="#">Detect</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="collapse2">
+						<input type="checkbox" id="title2" onclick="collapse('collapse2', 'collapse1')" />
+      					<label for="title2">
+      						<p id="header">Speech Recognition</p>
+      						<p id="sign">+</p>
+      					</label>
+
+						<div class="smartContent">
+							<p>Your smartContent goes here.</p>
+						</div>
+					</div>  
+				</div>
+			</div>
+
+			<div id="content2" class="content">
+				<h1>Face Recognition 2</h1>
+				<div class="content-description">
+					<input type="text" name="">
+					<button onclick="#">Detect</button>
+				</div>
+			</div>
+		</div>
 	</div>
+
+
+	<!-- <div id="particles-js">
+		<img src="./face.png">
+		<div class="navtab">
+			<div class="btn-box">
+				<button id="braintab" onclick="openSmartBrain()">
+					<i class="fa fa-rocket" aria-hidden="true"></i>
+					Smart brain
+				</button>
+				<button id="gallerytab" onclick="openGallery()">
+					<i class="fa fa-picture-o" aria-hidden="true"></i>
+					Gallary
+				</button>
+			</div>
+
+			<div id="content1" class="content">
+				<h1>Face Recognition</h1>
+				<div class="content-description">
+					<input type="text" name="">
+					<button onclick="#">Detect</button>
+				</div>
+			</div>
+
+			<div id="content2" class="content">
+				<h1>Face Recognition 2</h1>
+				<div class="content-description">
+					<input type="text" name="">
+					<button onclick="#">Detect</button>
+				</div>
+			</div>
+		</div>
+	</div> -->
 	
-	<script type="text/javascript" src="./js/particles.min.js"></script>
-	<script type="text/javascript" src="./js/app.js"></script>
+	
+	<!-- <div class="navtab">
+		<div class="btn-box">
+			<button id="braintab" onclick="openSmartBrain()">
+				<i class="fa fa-rocket" aria-hidden="true"></i>
+				Smart brain
+			</button>
+			<button id="gallerytab" onclick="openGallery()">
+				<i class="fa fa-picture-o" aria-hidden="true"></i>
+				Gallary
+			</button>
+		</div>
+
+		<div id="content1" class="content">
+			<h1>Face Recognition</h1>
+			<div class="content-description">
+				<input type="text" name="">
+				<button onclick="#">Detect</button>
+			</div>
+		</div>
+
+		<div id="content2" class="content">
+			<h1>Face Recognition 2</h1>
+			<div class="content-description">
+				<input type="text" name="">
+				<button onclick="#">Detect</button>
+			</div>
+		</div>
+	</div>
+-->
+
+
+<script type="text/javascript" src="./js/particles.min.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+<script type="text/javascript" src="./collapsible.js"></script>
 
 </body>
 </html>
